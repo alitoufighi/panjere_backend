@@ -20,4 +20,4 @@ def accept(request):
             print(error)
             return render(request, 'done.html', error)
 
-    return render(request, 'signup.html')
+    return render(request, 'home.html')
