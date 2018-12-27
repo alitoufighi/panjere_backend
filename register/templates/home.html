@@ -7,15 +7,11 @@
   <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
-
-{#    <link rel="stylesheet" href="{% static 'css/style.css' %}">#}
-
-
   <meta charset="UTF-8">
   <title>Sign-Up/Login Form</title>
   <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css' />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
-{#  <link rel="stylesheet" href="{% static 'css/style.css' %}">#}
+  <link rel="stylesheet" href="{% static 'css/form.css' %}">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -68,7 +64,7 @@
   </script>
 </head>
 
-<body >
+<body style="background-color: #2d323a;">
   <!-- Header Section Start -->
   <header id="header_part">
     <div class="header_part" id="head">
@@ -85,15 +81,13 @@
                   <!-- Logo End-->
                   <!-- Site Title start-->
                   <div class="site_title">
-                    <h1>سومین دوره‌ی همایش پنجره</h1>
+                    <h1>پنجمین دوره‌ی همایش پنجره</h1>
                     <h2>ACM شاخه‌ی دانشجویی </h2>
                     <h2>
                       تاریخ برگزاری:
-                      ۱۷
-                      و
-                      ۱۸
-                      اردیبهشت
-                      ۱۳۹۶
+                      ۱۲
+                      دی
+                      ۱۳۹۷
                     </h2>
                   </div>
 
@@ -228,24 +222,14 @@
             <!-- About text end -->
           </div>
           <!-- About service part start-->
-          <div class="col-lg-4 text-center mb-2">
-            <img class="rounded-circle img-fluid d-block mx-auto" src="{% static 'images/ut.png' %}">
-            <h3>مرکز انفورماتیک دانشگاه تهران</h3>
-          </br>
-        </br>
       </div>
       <div class="col-lg-4 text-center mb-2">
         <img class="rounded-circle img-fluid d-block mx-auto" src="{% static 'images/shatel.png' %}">
-        <h3>شاتل</h3>
+        <h3>توسن</h3>
       </br>
     </br>
   </div>
-  <div class="col-lg-4 text-center mb-2">
-    <img class="rounded-circle img-fluid d-block mx-auto" src="{% static 'images/Fanap1.png' %}">
-    <h3>فناپ</h3>
-  </br>
-</br>
-</div>
+
 <!-- About service part end-->
 </div>
 </div>
@@ -254,6 +238,49 @@
 </section>
 <!-- About Section End -->
 <!-- Contact Section Start -->
+  <section id>
+      <div class="form">
+
+  <div class="tab-content">
+    <div id="signup">
+      <h1 class="register_title">ثبت‌نام</h1>
+
+      <form action="register" method="post">
+
+        <div class="top-row">
+          <div class="field-wrap">
+            <input type="text" placeholder="نام خانوادگی" required autocomplete="off" />
+          </div>
+
+          <div class="field-wrap">
+            <input type="text" placeholder="نام" required autocomplete="off" />
+          </div>
+        </div>
+
+        <div class="field-wrap">
+          <input type="email" placeholder="آدرس ایمیل" required autocomplete="off" />
+        </div>
+        <div class="top-row">
+          <div class="field-wrap">
+            <input type="text" placeholder="رشته" autocomplete="off" />
+          </div>
+
+          <div class="field-wrap">
+            <input type="text" placeholder="دانشگاه" autocomplete="off" />
+          </div>
+        </div>
+
+        <button type="submit" class="button button-block" />انجام</button>
+
+      </form>
+
+    </div>
+
+  </div>
+  <!-- tab-content -->
+
+</div>
+  </section>
 <section id="contact_section">
   <div class="contact_section">
     <div class="container">
@@ -305,15 +332,15 @@
 </div>
 </div>
 </section>
-<section>
-  <div class="info">
-    <br>
-    پیاده سازی توسط
-    <a href="https://www.linkedin.com/in/ghazal-sahebjam-323621112?ppe=1">غزل صاحب جمع</a>
-    <br>
-    <br>
-  </div>
-</section>
+{#<section>#}
+{#  <div class="info">#}
+{#    <br>#}
+{#    پیاده سازی توسط#}
+{#    <a href="https://www.linkedin.com/in/ghazal-sahebjam-323621112?ppe=1">غزل صاحب جمع</a>#}
+{#    <br>#}
+{#    <br>#}
+{#  </div>#}
+{#</section>#}
 <!-- Contact Section End -->
 <!--Core js-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
