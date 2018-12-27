@@ -5,75 +5,65 @@
 	position: relative;
 	cursor: default;
 	box-shadow:
-		inset 0 0 0 0 rgba(200,95,66, 0.4),
-		inset 0 0 0 16px rgba(255,255,255,0.6),
-		0 1px 2px rgba(0,0,0,0.1);
+		inset 0 0 0 0 rgba(200, 95, 66, 0.4),
+		inset 0 0 0 16px rgba(255, 255, 255, 0.6),
+		0 1px 2px rgba(0, 0, 0, 0.1);
 
 	-webkit-transition: all 0.4s ease-in-out;
 	-moz-transition: all 0.4s ease-in-out;
 	-o-transition: all 0.4s ease-in-out;
 	-ms-transition: all 0.4s ease-in-out;
 	transition: all 0.4s ease-in-out;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+
 }
 
 .ch-img-1 {
-	background-image: url(../images/sokhanran/nazanin2.png);
+	background-image: url("/static/images/sokhanran/ramtin.jpg");
+	background-size: 200px !important;
 }
 
 .ch-img-2 {
-	background-image: url(../images/sokhanran/shahin.jpg);
+	background-image: url(../images/sokhanran/faili.jpg);
+	background-size: 200px;
+	background-position-y: 0;
 }
 
 .ch-img-3 {
-	background-image: url(../images/sokhanran/hamid.jpg);
+	background-image: url(../images/sokhanran/baharvand.jpg);
+	background-position-x: 4px;
 }
 
 .ch-img-4 {
-	background-image: url(../images/sokhanran/ramtin.jpg);
+	background-image: url(../images/sokhanran/sharifi.jpg);
+}
+
+.ch-img-4 .ch-info h3 {
+	height: 100px;
+	padding-top: 30px !important;
+}
+
+.ch-img-4 .ch-info p {
+	padding-top: 0 !important;
 }
 
 .ch-img-5 {
-	background-image: url(../images/sokhanran/mahini.jpg);
+	background-image: url(../images/sokhanran/sirjani.jpg);
+	background-size: 200px;
 }
 
 .ch-img-6 {
-	background-image: url(../images/sokhanran/akhlagh.jpg);
+	background-image: url(../images/sokhanran/6.png);
+	background-size: 180px;
+
 }
 
-.ch-img-7 {
-	background-image: url(../images/sokhanran/pooria.jpg);
-}
-
-.ch-img-8 {
-	background-image: url(../images/sokhanran/hashemi.jpg);
-}
-
-.ch-img-9{
-	background-image: url(../images/sokhanran/shatel.jpg);
-}
-
-.ch-img-10{
-	background-image: url(../images/sokhanran/pooriam.jpg);
-}
-
-.ch-img-11{
-	background-image: url(../images/sokhanran/dawood.jpg);
-}
-
-.ch-img-12{
-	background-image: url(../images/sokhanran/nili.jpg);
-}
-
-.ch-img-13{
-	background-image: url(../images/sokhanran/comingsoon.png);
-}
-
-.ch-img-14{
-	background-image: url(../images/sokhanran/amouzgar.jpg);
-}
 
 
 .ch-info {
+	text-decoration: none;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -92,7 +82,8 @@
 	-ms-transform: scale(0);
 	transform: scale(0);
 
-	-webkit-backface-visibility: hidden; /*for a smooth font */
+	-webkit-backface-visibility: hidden;
+	/*for a smooth font */
 
 }
 
@@ -108,7 +99,7 @@
 	font-family: 'Open Sans', Arial, sans-serif;
 	text-shadow:
 		0 0 1px #fff,
-		0 1px 2px rgba(0,0,0,0.3);
+		0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .ch-info p {
@@ -117,13 +108,13 @@
 	font-style: italic;
 	margin: 0 30px;
 	font-size: 12px;
-	border-top: 1px solid rgba(255,255,255,0.5);
+	/* border-top: 1px solid rgba(255, 255, 255, 0.5); */
 }
 
 .ch-info p a {
 	display: block;
 	color: #fff;
-	color: rgba(255,255,255,0.7);
+	color: rgba(255, 255, 255, 0.7);
 	font-style: normal;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -135,14 +126,14 @@
 
 .ch-info p a:hover {
 	color: #fff222;
-	color: rgba(255,242,34, 0.8);
+	color: rgba(255, 242, 34, 0.8);
 }
 
 .ch-item:hover {
 	box-shadow:
-		inset 0 0 0 110px rgba(200,95,66, 0.4),
-		inset 0 0 0 16px rgba(255,255,255,0.8),
-		0 1px 2px rgba(0,0,0,0.1);
+		inset 0 0 0 110px rgba(200, 95, 66, 0.4),
+		inset 0 0 0 16px rgba(255, 255, 255, 0.8),
+		0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .ch-item:hover .ch-info {
