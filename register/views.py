@@ -13,3 +13,7 @@ def accept(request):
             error = {"error": form.errors}
             return render(request, 'done.html', error)
     return redirect('home.html')
+
+
+def temp(request):
+    return render(request, 'done.html', {})

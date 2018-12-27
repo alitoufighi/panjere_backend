@@ -3,12 +3,12 @@
 <html lang="en">
 <head>
       <meta charset="UTF-8">
-  <title>Sign-Up/Login Form</title>
+  <title>همایش پنجره</title>
   <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
   <meta charset="UTF-8">
-  <title>Sign-Up/Login Form</title>
+  <title>همایش پنجره</title>
   <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css' />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
   <link rel="stylesheet" href="{% static 'css/form.css' %}">
@@ -114,11 +114,13 @@
 
 
                           <li><a href="#contact_section">تماس با ما</a></li>
+                          <li><a href="#welcome_section" >ثبت نام‍</a></li>
                           <li><a href="#welcome_section">حامیان</a></li>
 
                           <li><a href="#email_subscribe_section">سخنران‌ها</a></li>
 
                           <li><a href="#header_part" >زمان بندی</a></li>
+
                         </ul>
                       </div>
                     </div>
@@ -223,8 +225,8 @@
           </div>
           <!-- About service part start-->
       </div>
-      <div class="col-lg-4 text-center mb-2">
-        <img class="rounded-circle img-fluid d-block mx-auto" src="{% static 'images/shatel.png' %}">
+      <div class="text-center mb-2">
+        <img class="rounded-circle img-fluid d-block mx-auto logo" src="{% static 'images/logo.svg' %}">
         <h3>توسن</h3>
       </br>
     </br>
@@ -249,24 +251,24 @@
 
         <div class="top-row">
           <div class="field-wrap">
-            <input type="text" placeholder="نام خانوادگی" required autocomplete="off" />
+            <input type="text" placeholder="نام خانوادگی*" name="last_name" required autocomplete="off" />
           </div>
 
           <div class="field-wrap">
-            <input type="text" placeholder="نام" required autocomplete="off" />
+            <input type="text" placeholder="نام*" name="first_name" required autocomplete="off" />
           </div>
         </div>
 
         <div class="field-wrap">
-          <input type="email" placeholder="آدرس ایمیل" required autocomplete="off" />
+          <input type="email" placeholder="آدرس ایمیل*" name="email" required autocomplete="off" />
         </div>
         <div class="top-row">
           <div class="field-wrap">
-            <input type="text" placeholder="رشته" autocomplete="off" />
+            <input type="text" placeholder="رشته*" name="major" autocomplete="off" />
           </div>
 
           <div class="field-wrap">
-            <input type="text" placeholder="دانشگاه" autocomplete="off" />
+            <input type="text" placeholder="دانشگاه*" name="university" autocomplete="off" />
           </div>
         </div>
 

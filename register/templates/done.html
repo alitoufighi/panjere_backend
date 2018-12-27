@@ -1,23 +1,25 @@
+{% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="height: 100%">
     <head>
           <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>همایش پنجره</title>
-      <link href="font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet" />
-      <link href="scripts/jquery-ui-1.11.2/jquery-ui.min.css" rel="stylesheet" />
-      <link rel="stylesheet" href="css/animate.css">
-      <link href="css/bootstrap.min.css" rel="stylesheet">
-      <link href="style.css" rel="stylesheet">
-      <link href="css/style-responsive.css" rel="stylesheet">
-      <link rel="stylesheet" type="text/css" href="css/common.css" />
+      <link href="{% static 'font-awesome-4.2.0/css/font-awesome.min.css' %}" rel="stylesheet" />
+      <link href="{% static 'scripts/jquery-ui-1.11.2/jquery-ui.min.css' %}" rel="stylesheet" />
+      <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+      <link href="{% static 'css/bootstrap.min.css'%}" rel="stylesheet">
+      <link href="{%  static 'style.css'%}" rel="stylesheet">
+      <link href="{%  static  'css/style-responsive.css' %}" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="{% static 'css/common.css' %}" />
+        <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}"></link>
 {#      <link rel="stylesheet" type="text/css" href="css/pics.css" />#}
-      <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
-      <script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
+      <link rel="icon" type="image/png" sizes="16x16" href="{% static 'images/favicon.png' %}">
+      <script type="text/javascript" src="{% static 'js/modernizr.custom.79639.js' %}"></script>
 
 
-      <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+      <script src="{% static 'https://maps.googleapis.com/maps/api/js?sensor=false' %}"></script>
       <script>
       function initialize() {
         var myLatlng = new google.maps.LatLng(35.7246146,51.386681835);
@@ -52,10 +54,10 @@
 
       </script>
     </head>
-    <body>
+    <body style="height: 100%">
         <!-- Header Section Start -->
-      <header id="header_part">
-        <div class="header_part" id="head">
+      <header id="header_part" style="height: 100%">
+        <div class="header_part" id="head" style="height: 100%">
           <div class="overlay">
             <div class="start_part">
               <div class="container">
@@ -69,23 +71,32 @@
                       <!-- Logo End-->
                       <!-- Site Title start-->
                       <div class="site_title">
-                        <h1>سومین دوره‌ی همایش پنجره</h1>
+                        <h1>پنجمین دوره‌ی همایش پنجره</h1>
                         <h2>ACM شاخه‌ی دانشجویی </h2>
                         <h2>
                           تاریخ برگزاری:
-                          ۱۷
-                          و
-                          ۱۸
-                          اردیبهشت
-                          ۱۳۹۶
+                          ۱۲
+                          دی
+                          ۱۳۹۷
                         </h2>
+                      <br>
+                      <br>
+                          {% if error %}
+            <div>{{ error }}</div>
+        {% else %}
+            <div style="font-size: 27px;
+    color: aquamarine;">ثبت نام شما با موفقیت انجام شد</div>
+        {% endif %}
+        <div>
+            <a style="text-decoration: underline; text-underline-position: under;" href="/panjere">بازگشت به صفحه‌ی اصلی </a>
+        </div>
                       </div>
 
-{#                      <!-- Countdown start -->#}
-{#                      <div class="countdown wow bounceInUp">#}
-{#                        <div class="defaultCountdown"></div>#}
-{#                      </div>#}
-{#                      <!-- Countdown end-->#}
+                      <!-- Countdown start -->
+                      <div class="countdown wow bounceInUp">
+                        <div class="defaultCountdown"></div>
+                      </div>
+                      <!-- Countdown end-->
                     </div>
                   </div>
                 </div>
@@ -93,16 +104,10 @@
             </div>
           </div>
         </div>
+
       </header>
       <!-- Header Section End -->
 
-        {% if error %}
-            <div>{{ error }}</div>
-        {% else %}
-            <div>ثبت نام شما با موفقیت انجام شد.</div>
-        {% endif %}
-        <div>
-            <a href="/">برای بازگشت به صفحه‌ی اصلی کلیک کنید</a>
-        </div>
+
     </body>
 </html>

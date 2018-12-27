@@ -72,15 +72,11 @@ a:hover {
   margin: 0 0 50px 0;
 }
 
+.logo{
+  width: 120px;
+}
+
 ::placeholder {
-  position: absolute;
-  -webkit-transform: translateY(6px);
-          transform: translateY(6px);
-  right: 13px;
-  color: rgba(255, 255, 255, 0.5);
-  transition: all 0.25s ease;
-  -webkit-backface-visibility: hidden;
-  pointer-events: none;
   font-size: 1rem;
 }
 label .req {

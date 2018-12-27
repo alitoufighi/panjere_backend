@@ -7,6 +7,7 @@
 @font-face{font-family:'IRANSans';src:url("fonts/IRANSans-Bold-web.41cc575861b8.woff2") format("woff2"),url("../fonts/IRANSans-Bold-web.ff09ae29018d.woff") format("woff");font-weight:700}
 @font-face{font-family:'Material Icons';font-style:normal;font-weight:400;src:local("Material Icons"),local("MaterialIcons-Regular"),url("../fonts/material-icons.4e2fca2e7b76.woff") format("woff"),local("Material Icons"),local("MaterialIcons-Regular"),url("../fonts/material-icons.8e3836689dcc.woff2") format("woff2")}
 
+
 body, h1, h2, h3, h4, h5, h6, div, p, a, strong, b {
   font-family:'IRANSans' !important;
       LINE-HEIGHT: 1.618;
@@ -21,6 +22,9 @@ body{
 	text-align: right;
 	font-family:'IRANSans';
 	color: #fff;
+	text-align: center;
+	font-family: IRANSans !important;
+
 }
 
 a {
@@ -159,6 +163,7 @@ ul,ol         { list-style:none; }
 .header_part{
 	background: url("images/bg1.jpeg") repeat scroll center center / cover  rgba(0, 0, 0, 0);
 	overflow: hidden;
+	height: 100%;
 }
 .navbar-default {
 	background-color: transparent;
