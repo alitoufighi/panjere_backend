@@ -1,14 +1,13 @@
 from django.db import models
-from . import validators
 from django.utils import timezone
 
 
 class Attendant(models.Model):
-    first_name = models.CharField(max_length=80, validators=[validators.isalphavalidator], blank=False)
-    last_name = models.CharField(max_length=80, validators=[validators.isalphavalidator], blank=False)
-    email = models.EmailField(unique=True)
-    major = models.CharField(max_length=80)
-    university = models.CharField(max_length=80)
+    first_name = models.CharField(max_length=80, blank=False)
+    last_name = models.CharField(max_length=80, blank=False)
+    email = models.EmailField(unique=True, blank=False)
+    major = models.CharField(max_length=80, blank=True)
+    university = models.CharField(max_length=80, blank=True)
     registration_time = models.DateTimeField(default=timezone.now)
 
     def __str__(self):

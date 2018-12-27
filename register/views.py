@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .forms import RegistrationForm
 
 
@@ -10,14 +10,6 @@ def accept(request):
             error = {'error': None}
             return render(request, 'done.html', error)
         else:
-            # print(form.errors.items())
-            if 'name' in form.errors.items():
-                print("Name Error", form.errors['name'])
-                error = {'name': form.errors['name']}
-            else:
-                print("Error!")
-                error = {'error': True}
-            print(error)
+            error = {"error": form.errors}
             return render(request, 'done.html', error)
-
-    return render(request, 'home.html')
+    return redirect('home.html')
