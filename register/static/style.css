@@ -321,6 +321,7 @@ ul,ol         { list-style:none; }
 /* Contact Section
 =====================================================================*/
 .contact_section{
+	justify-content: center;
 	overflow: hidden;
 	background: none repeat scroll 0 0 #18191a;
 	color: #fff;

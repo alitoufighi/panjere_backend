@@ -54,8 +54,21 @@
 	background-size: 200px;
 }
 
+.ch-img-6 .ch-info h3 {
+	height: 100px;
+	padding-top: 20px !important;
+}
+
+.ch-img-6 .ch-info p {
+	padding-top: 0 !important;
+}
+
+.ch-img-6 .ch-info i {
+	size: 5px;
+}
+
 .ch-img-6 {
-	background-image: url(../images/sokhanran/6.png);
+	background-image: url(../images/sokhanran/abol.jpg);
 	background-size: 180px;
 
 }
