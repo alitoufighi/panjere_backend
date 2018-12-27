@@ -25,15 +25,27 @@
 	background-size: 200px !important;
 }
 
+.ch-img-1 .ch-info h3{
+	margin-top: -10px;
+}
+
 .ch-img-2 {
 	background-image: url(../images/sokhanran/faili.jpg);
 	background-size: 200px;
 	background-position-y: 0;
 }
 
+.ch-img-2 .ch-info h3{
+	margin-top: -20px;
+}
+
 .ch-img-3 {
 	background-image: url(../images/sokhanran/baharvand.jpg);
 	background-position-x: 4px;
+}
+
+.ch-img-3 .ch-info h3{
+	margin-top: -10px;
 }
 
 .ch-img-4 {
@@ -54,6 +66,10 @@
 	background-size: 200px;
 }
 
+.ch-img-5 .ch-info h3 {
+	margin-top: -20px;
+}
+
 .ch-img-6 .ch-info h3 {
 	height: 100px;
 	padding-top: 20px !important;
@@ -72,8 +88,6 @@
 	background-size: 180px;
 
 }
-
-
 
 .ch-info {
 	text-decoration: none;
