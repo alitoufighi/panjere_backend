@@ -1,5 +1,4 @@
 *.pyc
-static/
 __pycache__
 *.sqlite3
 *.cpython-35.pyc
