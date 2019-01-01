@@ -62,12 +62,14 @@
 }
 
 .ch-img-5 {
-	background-image: url(../images/sokhanran/sirjani.jpg);
+	background-image: url(../images/sokhanran/tajedin.jpg);
 	background-size: 200px;
 }
 
 .ch-img-5 .ch-info h3 {
-	margin-top: -20px;
+	margin-top: -15px;
+	/*padding-top: px !important;*/
+
 }
 
 .ch-img-6 .ch-info h3 {
